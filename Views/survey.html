@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+    <title>FriendFinder Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body alt="Chain of paper friends in circle">
+    <div class="container">
+        <div class="jumbotron">
+
+            <h1>Survey Questions</h1>
+            <hr>
+            <h4>About You</h4>
+            <hr>
+
+            <form>
+                <div class="form-group">
+                    <label for="userName">Name (Required)</label>
+                    <input type="text" class="form-control" id="friendName" placeholder="Enter Your Name">
+                </div>
+                <!-- <div class="form-group">
+ 					<label for="exampleInputPassword1">Link to Photo Image (Required)</label>
+ 					<input type="password" class="form-control" id="exampleInputPassword1 friendImg">
+ 				</div> -->
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile02 ">
+                        <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                    </div>
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="friendImg">Upload</span>
+                    </div>
+                </div>
+                <hr>
+
+
+                <br>
+                <div class="form-group">
+                    <label for="question1">Question 1: Do you consider yourself an introvert?</label>
+                    <select class="form-control" id="question1">
+                        <option value>Select an option</option>
+                        <option value=1>1 (Strongly Disagree)</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question2">Question 2: I enjoy spending time alone to recharge.</label>
+                    <select class="form-control" id="question2">
+                        <option value>Select an option</option>
+                        <option value=1>1 (Strongly Disagree)</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question3">Question 3: When I go out socially, it's usually with a large group of
+                        friends.</label>
+                    <select class="form-control" id="question3">
+                        <option value>Select an option</option>
+                        <option value=1>1 (Strongly Disagree)</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question4">Question 4: In conversations or at meetings, I plan what I am going to say
+                        before speaking.</label>
+                    <select class="form-control" id="question4">
+                        <option value>Select an option</option>
+                        <option value=1>1 (Strongly Disagree)</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question5">Question 5: I turn to others for inspirations.</label>
+                    <select class="form-control" id="question5">
+                        <option value>Select an option</option>
+                        <option value=1>1 (Strongly Disagree)</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question6">Question 6: I eagerly share my thoughts and feelings with other people.</label>
+                    <select class="form-control" id="question6">
+                        <option value>Select an option</option>
+                        <option value=1>1 (Strongly Disagree)</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question7">Question 7: When conversing with someone, I reveal personal facts about
+                        myself.</label>
+                    <select class="form-control" id="question7">
+                        <option value>Select an option</option>
+                        <option value=1>1 (Strongly Disagree)</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question8">Question 8: I prefer working out personal problems on my own.</label>
+                    <select class="form-control" id="question8">
+                        <option value>Select an option</option>
+                        <option value=1>1 (Strongly Disagree)</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question9">Question 9: I tend to be reserved when dealing with people I don't know very
+                        well.</label>
+                    <select class="form-control" id="question9">
+                        <option value>Select an option</option>
+                        <option value=1>1 (Strongly Disagree)</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question10">Question 10: I get uneasy when pressed to come up with a response to
+                        something or someone on the spot.</label>
+                    <select class="form-control" id="question10">
+                        <option value>Select an option</option>
+                        <option value=1>1 (Strongly Disagree)</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary submit"><i class="far fa-check-square"></i> Submit Survey</button>
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p><a href="/api/friends">API Friends Link</a> | <a href="https://github.com/mjordana95/HW-FriendFinder">GitHub
+                    Repo</a></p>
+        </div>
+    </footer>
+
+    <div class="modal" id="executeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Friend Match</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>Your new friend's name is: <span id="bestName"></span></h4>
+                    <img id="bestImg">
+                    <!-- <p>Modal body text goes here.</p> -->
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    $(".submit").on("click", function (event) {
+        
+        event.preventDefault();
+        alert("Thank you for submitting to the FriendFinder Survey");
+    
+        var newFriend = {
+            newName: $("#friendName").val().trim(),
+            newImg: $("#friendImg").val().trim(),
+            scores: [
+                $("#question1").val(),
+                $("#question2").val(),
+                $("#question3").val(),
+                $("#question4").val(),
+                $("#question5").val(),
+                $("#question6").val(),
+                $("#question7").val(),
+                $("#question8").val(),
+                $("#question9").val(),
+                $("#question10").val()
+            ]
+        };
+        //log newFriend captured from form
+        //console.log(newFriend);
+        //console.log(newFriend.newName);
+        //this is what I need to do the friend match up
+        //console.log(newFriend.scores);
+        //console.log(newFriend[0].score);
+
+
+        $.post("/api/friends", newFriend,
+            function (data) {
+
+                // If a best friend match is found
+                if (data) {
+                    //alert("Yay! You are part of the FriendFinder Network, please wait for your best friend match!");
+                    $('#bestName').text(data.name);
+                    $('#bestImg').attr("src", data.img).addClass("img-fluid");
+                    //show modal with best friend match
+                    $('#executeModal').modal('toggle');
+                    //   $('#myModal').on('shown.bs.modal', function () {
+                    // 	$('#myInput').trigger('focus')
+                    // })
+                }
+
+                // ?
+                else {
+                    alert("Sorry we are having problems, please try again");
+                }
+
+            
+                $("#friendName").val("");
+                $("#friendImg").val("");
+                $("#question1").val("");
+                $("#question2").val("");
+                $("#question3").val("");
+                $("#question4").val("");
+                $("#question5").val("");
+                $("#question6").val("");
+                $("#question7").val("");
+                $("#question8").val("");
+                $("#question9").val("");
+                $("#question10").val("");
+
+            });
+    });
+
+</script>
